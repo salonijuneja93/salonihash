@@ -7,7 +7,7 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
-const mongoURI = process.env.MONGO_URI || 'YOUR_MONGODB_ATLAS_CONNECTION_URL';
+const mongoURI = process.env.MONGO_URI || 'mongodb+srv://salonijuneja93:salonijuneja93@saloni07.6xpr2.mongodb.net/';
 mongoose.connect(mongoURI, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => console.log('MongoDB connected successfully'))
   .catch(err => console.error('MongoDB connection error:', err));
